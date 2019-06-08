@@ -1,0 +1,119 @@
+.Header {
+    overflow: auto;
+    clear: both;
+    border-bottom-style: solid;
+    border-width: thin;
+    border-color: black;
+    background-color: lightgrey;
+    height: auto;
+}
+
+.Header h1 {
+    float: left;
+    margin: 0 auto;
+    padding: 6px;
+    background-color: lightskyblue;
+}
+
+.HeaderLinks {
+    float: right;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.full {
+    background-color: lightgrey;
+    height: 100%;
+    margin: 0px auto;
+    width: 90%;
+}
+
+.Footer {
+    position: sticky;
+    height: 50px;
+    width: 100%;
+    margin-top: 5px;
+    border-top: solid;
+    border-color: black;
+    background-color: lightgrey;
+}
+
+.AboutMe p {
+    font-size: 1.5em;
+}
+
+.AboutMe img {
+    float: left;
+    margin: 10px 10px 5px 10px;
+}
+
+.full h2 {
+    clear: both;
+    border-bottom-style: solid;
+    border-width: thin;
+    border-color: black;
+    margin: 20px 20px 0 20px;
+    padding-top: 10px;
+}
+
+.info {
+    margin: 0 20px
+}
+
+.info h4 {
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-left-width: thin;
+    width: 12px;
+    padding: 0 0 0 2px;
+    clear: both;
+}
+
+.info input {
+    margin: 0 10% 10px 0;
+    clear: both;
+    overflow: auto;
+    width: 100%;
+}
+
+.button {
+    margin: 20px 0 0 0;
+    float: left;
+}
+
+a:link, a:visited {
+    color: darkblue;
+    text-decoration: none;
+}
+
+.photos {
+    text-align: center;
+}
+
+.photos img {
+    margin: 1% 4% 1% 4%;
+    border-style: Solid;
+    border-color: rgb(46, 46, 46);
+}
+
+@media only screen and (max-width: 980px) {
+    .full {}
+}
+
+@media only screen and (max-width: 768px) {
+    .full {}
+}
+
+@media only screen and (max-width: 640px) {
+    .Header h1 {
+        width: 100%;
+        text-align: center;
+        border-bottom-style: solid;
+        border-color: black;
+        border-width: thick;
+    }
+    .HeaderLinks {
+        width: 100%;
+        text-align: center;
+    }
+}
