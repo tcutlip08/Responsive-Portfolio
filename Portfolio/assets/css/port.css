@@ -1,6 +1,7 @@
 .Header {
     overflow: auto;
     clear: both;
+    position: static;
     border-bottom-style: solid;
     border-width: thin;
     border-color: black;
@@ -30,6 +31,8 @@
 
 .Footer {
     position: sticky;
+    left: 0;
+    bottom: 0;
     height: 50px;
     width: 100%;
     margin-top: 5px;
@@ -40,6 +43,7 @@
 
 .AboutMe p {
     font-size: 1.5em;
+    font-family: sans-serif;
 }
 
 .AboutMe img {
@@ -97,11 +101,14 @@ a:link, a:visited {
 }
 
 @media only screen and (max-width: 980px) {
-    .full {}
+    .full {
+        width: 70%;
+        margin-left: 5%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
-    .full {}
+    .full {width: 90%;}
 }
 
 @media only screen and (max-width: 640px) {
@@ -115,5 +122,13 @@ a:link, a:visited {
     .HeaderLinks {
         width: 100%;
         text-align: center;
+    }
+    .AboutMe img{
+        width: 95%;
+        height: auto;
+        text-align: center;
+    }
+    .AboutMe p{
+        padding: 2.5%;
     }
 }
