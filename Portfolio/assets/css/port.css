@@ -1,12 +1,11 @@
 .Header {
-    overflow: auto;
+    overflow: hidden;
     clear: both;
     position: static;
     border-bottom-style: solid;
     border-width: thin;
     border-color: black;
     background-color: lightgrey;
-    height: auto;
 }
 
 .Header h1 {
@@ -22,24 +21,34 @@
     padding: 15px;
 }
 
-.full {
+.wrapper {
     background-color: lightgrey;
-    height: 100%;
-    margin: 0px auto;
+    margin: 1px auto;
     width: 90%;
 }
 
 .Footer {
     position: sticky;
-    left: 0;
-    bottom: 0;
     height: 50px;
     width: 100%;
-    margin-top: 5px;
+    margin-top: 5%;
     border-top: solid;
     border-color: black;
     background-color: lightgrey;
 }
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .wrapper {
+    min-height: 90%;
+    margin-bottom: -50px;
+  }
+  .footer,
+  .push {
+    height: 50px;
+  }
 
 .AboutMe p {
     font-size: 1.5em;
@@ -51,7 +60,7 @@
     margin: 10px 10px 5px 10px;
 }
 
-.full h2 {
+.wrapper h2 {
     clear: both;
     border-bottom-style: solid;
     border-width: thin;
@@ -81,8 +90,8 @@
 }
 
 .button {
-    margin: 20px 0 0 0;
-    float: left;
+    margin: 10px 0;
+    padding-bottom: 10px;
 }
 
 a:link, a:visited {
@@ -101,14 +110,14 @@ a:link, a:visited {
 }
 
 @media only screen and (max-width: 980px) {
-    .full {
+    .wrapper {
         width: 70%;
         margin-left: 5%;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .full {width: 90%;}
+    .wrapper {width: 90%;}
 }
 
 @media only screen and (max-width: 640px) {
